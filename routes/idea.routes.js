@@ -21,4 +21,7 @@ module.exports=(app)=>{ //this the way to connect app  to the  route
  //PUT 127.0.0.1:8000/ideaApp/api/v1/ideas/3
  app.put("/ideaApp/api/v1/ideas/:id",idea_controller.updateIdea)
 
+  //DELETE 127.0.0.1:8000/ideaApp/api/v1/ideas/3
+
+ app.delete("/ideaApp/api/v1/ideas/:id",idea_controller.deleteIdea)
 }

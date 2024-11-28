@@ -67,3 +67,22 @@ exports.updateIdea=(req,res)=>{
   }
   //Return the updated idea .
 }
+
+exports.deleteIdea=(req , res)=>{
+
+  //fetch the idea and see if it's present 
+  idea_id= req.params.id   //to fetch the idea 
+
+  if(ideas[idea_id]){
+    delete ideas[idea_id]
+    res.status(200).send({
+      message:'yaay! your idea has been sucessfully deleted'
+    })
+
+  }else{
+     return res.status(404).send({
+      mesage:'Idea id you want to delete is already not present sir !'
+     })
+  }
+  //delete if it present 
+}
