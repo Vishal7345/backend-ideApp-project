@@ -3,7 +3,7 @@ module.exports={     //to convert any file into module  command is 'module.expor
         id:1,
         idea_name:'Great idea',
         author_name:'vishal',
-        ideas_description:'thius one of the finest idea i ever had '  //index.models.js file act like dummy database 
+        ideas_description:'this one of the finest idea i ever had '  //index.models.js file act like dummy database 
 
     },
     2:{
